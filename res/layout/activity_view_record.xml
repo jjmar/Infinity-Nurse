@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="25dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ViewRecordActivity" >
+
+    <TextView
+        android:id="@+id/record_number_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/record_temp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/record_number_title"
+        android:text="@string/patient_temp_hint" />
+
+    <TextView
+        android:id="@+id/record_heart_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/record_temp_label"
+        android:layout_below="@+id/record_temp_label"
+        android:layout_marginTop="18dp"
+        android:text="@string/patient_heart_hint" />
+
+    <TextView
+        android:id="@+id/record_bloodSys_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/record_heart_label"
+        android:layout_below="@+id/record_heart_label"
+        android:layout_marginTop="18dp"
+        android:text="@string/patient_bloodSys_hint" />
+
+    <TextView
+        android:id="@+id/record_BloodDia_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/record_bloodSys_label"
+        android:layout_below="@+id/record_bloodSys_label"
+        android:layout_marginTop="17dp"
+        android:text="@string/patient_bloodDia_hint" />
+
+    <TextView
+        android:id="@+id/record_temp_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/record_number_title"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@+id/record_BloodDia_label" />
+
+    <TextView
+        android:id="@+id/record_heart_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/record_heart_label"
+        android:layout_alignLeft="@+id/record_temp_display" />
+
+    <TextView
+        android:id="@+id/record_bloodSys_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/record_bloodSys_label"
+        android:layout_alignLeft="@+id/record_heart_display"/>
+
+    <TextView
+        android:id="@+id/record_bloodDia_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/record_BloodDia_label"
+        android:layout_alignLeft="@+id/record_bloodSys_display" />
+
+    <TextView
+        android:id="@+id/prescription_name_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="129dp"
+        android:text="ame"/>
+
+    <TextView
+        android:id="@+id/rec_pre_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prescription_name_display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/pre_name_label" />
+
+    <TextView
+        android:id="@+id/prescription_info_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/prescription_name_display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="info" />
+
+    <TextView
+        android:id="@+id/rec_pre_info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/prescription_info_display"
+        android:layout_marginBottom="28dp"
+        android:layout_toRightOf="@+id/record_heart_label"
+        android:text="@string/pre_info_label" />
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StaticPatientActivity" >
+    
+<TextView
+        android:id="@+id/doc_visit_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patient_healthcard_display"
+        android:layout_below="@+id/patient_healthcard_display"
+        android:ems="10" />
+<TextView
+        android:id="@+id/dov_visit_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/doc_visit_display"
+        android:layout_alignBottom="@+id/doc_visit_display"
+        android:layout_alignLeft="@+id/patient_healthcard_label"
+        android:text="@string/doc_visit_label" />
+<TextView
+        android:id="@+id/patient_healthcard_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patient_healthcard_display"
+        android:layout_alignBottom="@+id/patient_healthcard_display"
+        android:layout_alignParentLeft="true"
+        android:text="@string/patient_healthcard_label" />
+<TextView
+        android:id="@+id/patient_healthcard_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_dob_display"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+<TextView
+        android:id="@+id/patient_dob_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_heart_display"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+<TextView
+        android:id="@+id/patient_dob_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patient_dob_display"
+        android:layout_alignBottom="@+id/patient_dob_display"
+        android:layout_alignParentLeft="true"
+        android:text="@string/patient_dob_label" />
+<TextView
+        android:id="@+id/patient_heart_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patient_heart_display"
+        android:layout_alignBottom="@+id/patient_heart_display"
+        android:layout_alignParentLeft="true"
+        android:text="@string/patient_heart_label" />
+<TextView
+        android:id="@+id/patient_heart_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_bloodDia_display"
+        android:layout_centerHorizontal="true"
+        android:ems="10"/>
+<TextView
+        android:id="@+id/patient_bloodDia_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_bloodSys_display"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+<TextView
+        android:id="@+id/patient_bloodDia_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patient_bloodDia_display"
+        android:layout_alignBottom="@+id/patient_bloodDia_display"
+        android:layout_alignParentLeft="true"
+        android:text="@string/patient_bloodDia_label" />
+<TextView
+        android:id="@+id/patient_bloodSys_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patient_bloodSys_display"
+        android:layout_alignBottom="@+id/patient_bloodSys_display"
+        android:layout_alignParentLeft="true"
+        android:text="@string/patient_bloodSys_label" />
+<TextView
+        android:id="@+id/patient_bloodSys_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_temp_display"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+<TextView
+        android:id="@+id/patient_temp_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_arrival_display"
+        android:layout_centerHorizontal="true"
+        android:ems="10"/>
+<TextView
+        android:id="@+id/patient_temp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patient_temp_display"
+        android:layout_alignBottom="@+id/patient_temp_display"
+        android:layout_alignParentLeft="true"
+        android:text="@string/patient_temp_label" />
+<TextView
+        android:id="@+id/patient_arrival_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patient_arrival_display"
+        android:layout_alignBottom="@+id/patient_arrival_display"
+        android:layout_alignParentLeft="true"
+        android:text="@string/patient_arrival_label" />
+<TextView
+        android:id="@+id/patient_arrival_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_name_display"
+        android:layout_centerHorizontal="true"
+        android:ems="10"/>
+<TextView
+        android:id="@+id/patient_name_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"/>
+<TextView
+        android:id="@+id/patient_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patient_name_display"
+        android:layout_alignBottom="@+id/patient_name_display"
+        android:layout_alignParentLeft="true"
+        android:text="@string/patient_name_label" />
+<TextView
+        android:id="@+id/view_patient_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/view_patient_title_text" />
+
+<TextView
+    android:id="@+id/pre_info_display"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/pre_name_display"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="45dp"
+    android:text="temp info visit"/>
+
+<TextView
+    android:id="@+id/pre_name_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/pre_name_display"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="28dp"
+    android:text="@string/pre_name_label" />
+
+<TextView
+    android:id="@+id/pre_name_display"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/doc_visit_display"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="83dp"
+    android:text="temp name"/>
+
+<TextView
+    android:id="@+id/pre_info_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/pre_name_label"
+    android:layout_marginTop="27dp"
+    android:layout_toRightOf="@+id/patient_heart_label"
+    android:text="@string/pre_info_label" />
+
+</RelativeLayout>
